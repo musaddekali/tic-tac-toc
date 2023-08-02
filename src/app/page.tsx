@@ -1,7 +1,9 @@
+import Game from "./components/Game/Game";
+
 export default function Home() {
   return (
     <main>
-     <h1>Hello mahid. Welcome to Next 13</h1>
+    <Game />
     </main>
   )
 }
