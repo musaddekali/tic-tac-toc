@@ -1,9 +1,9 @@
-import Game from "./components/Game/Game";
+import Game from "@/Modules/Game/Game";
 
 export default function Home() {
   return (
     <main>
-    <Game />
+      <Game />
     </main>
-  )
+  );
 }
