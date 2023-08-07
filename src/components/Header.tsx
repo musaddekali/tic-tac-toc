@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="sticky top-0">
+    <header className="absolute left-0 right-0 top-0">
       <nav className="py-4 bg-slate-100">
         <div className="container">
           <ul className="flex items-center justify-center gap-8">
