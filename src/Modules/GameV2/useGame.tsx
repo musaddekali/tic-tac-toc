@@ -7,7 +7,7 @@ function useGame() {
   const [currentMove, setCurrentMove] = useState(0);
   const squares = history[currentMove];
   const xIsNext = currentMove % 2 === 0;
-  const winner = calculateWinner(squares);
+  const {winner, winnerPositions} = calculateWinner(squares) || {};
 
   function jumpTo(nextMove: number) {
     setCurrentMove(nextMove);
@@ -51,7 +51,9 @@ function useGame() {
     playerStatus,
     history,
     jumpTo,
-    currentMove
+    currentMove,
+    winner,
+    winnerPositions
   };
 }
 export default useGame;
