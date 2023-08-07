@@ -9,7 +9,7 @@ type BoardType = {
 };
 
 const Board = ({ squares, xIsNext, onPlay }: BoardType) => {
-  const winner = calculateWinner(squares);
+  const {winner} = calculateWinner(squares) || {};
   let status;
   if (winner) {
     status = `Winner is ${winner}`;

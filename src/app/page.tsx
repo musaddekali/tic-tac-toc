@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <main>
       <GameV2 />
-      <Game />
     </main>
   );
 }
