@@ -7,13 +7,19 @@ function Header() {
         <div className="container">
           <ul className="flex items-center justify-center gap-8">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/">
+                <span className="text-slate-800 hover:underline hover:text-blue-500">Home</span>
+              </Link>
             </li>
             <li>
-              <Link href="/game_v1">GameV1</Link>
+              <Link href="/game_v1">
+                <span className="text-slate-800 hover:underline hover:text-blue-500">GameV1</span>
+              </Link>
             </li>
             <li>
-              <Link href="/">GameV2</Link>
+              <Link href="/">
+                <span className="text-slate-800 hover:underline hover:text-blue-500">GameV2</span>
+              </Link>
             </li>
           </ul>
         </div>
