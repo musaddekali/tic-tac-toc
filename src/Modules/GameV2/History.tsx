@@ -1,5 +1,5 @@
 "use client";
-const Moves = ({
+const History = ({
     history,
     onJump,
     currentMove,
@@ -38,4 +38,4 @@ const Moves = ({
     return <ol className="flex flex-col gap-y-1 border p-2 h-[240px] min-w-[162px] overflow-auto">{moves}</ol>;
   };
   
-  export default Moves;
+  export default History;

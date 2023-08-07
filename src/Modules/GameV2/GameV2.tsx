@@ -1,5 +1,5 @@
 "use client";
-import Moves from "./Moves";
+import History from "./History";
 import Square from "./Square";
 import useGame from "./useGame";
 
@@ -27,7 +27,7 @@ function GameV2() {
                 ))}
               </div>
               <div className="info">
-                <Moves history={history} onJump={jumpTo} currentMove={currentMove} />
+                <History history={history} onJump={jumpTo} currentMove={currentMove} />
               </div>
             </div>
           </div>
